@@ -53,7 +53,7 @@ log_data/2018/11/2018-11-13-events.json
 ## Data Model
 Using the song and log datasets, data is transformed into Star Schema, so that it can be queries easily and understandable to analysts and business users.
 First Data is fetched from S3 bucket to staging tables.
-![Staging Taables]()
+![Staging Taables](https://github.com/vikaskumar23/Udacity-DEND-Project-Data-Warehouse-on-Redshift/blob/master/staging_tables.PNG)
 Then after some transformations data is loaded into star Schema. Some transformations include:
 - Date data is divided in chunks to create date dimension.
 - Data from songs table and events table is joined to create songplays fact table.
@@ -63,7 +63,7 @@ The resulting star schema consists of one fact table and four dimension tables.
 ![Data Model](https://github.com/vikaskumar23/Udacity-DEND-Project-Data-Modeling-with-Postgres/blob/master/dbmodel.png)
 ##### Fact Table
 - **songplays:** records in log data associated with song plays i.e. records with page ```NextSong```
-    - **fsongplay_id:** unique id for each songplay event
+    - **songplay_id:** unique id for each songplay event
     - **start_time:** start time of event (timestamp)
     - **user_id:** user_id of user
     - **level:** it shows user is paid subscriber or not
@@ -155,7 +155,9 @@ The project includes five files:
 ## References
 
 www.udacity.com
+
 https://docs.aws.amazon.com/redshift/index.html
+
 https://medium.com/@maskepravin02/why-distkey-and-sortkey-are-important-45ca94d12290
 
 
