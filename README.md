@@ -60,7 +60,7 @@ Then after some transformations data is loaded into star Schema. Some transforma
 - Duplicate data is removed before inserting to star schema.
 
 The resulting star schema consists of one fact table and four dimension tables.
-![Data Model](https://github.com/vikaskumar23/Udacity-DEND-Project-Data-Modeling-with-Postgres/blob/master/dbmodel.png)
+![Data Model](https://github.com/vikaskumar23/Udacity-DEND-Project-Data-Warehouse-on-Redshift/blob/master/dbmodel.png)
 ##### Fact Table
 - **songplays:** records in log data associated with song plays i.e. records with page ```NextSong```
     - **songplay_id:** unique id for each songplay event
