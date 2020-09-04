@@ -54,6 +54,7 @@ log_data/2018/11/2018-11-13-events.json
 Using the song and log datasets, data is transformed into Star Schema, so that it can be queries easily and understandable to analysts and business users.
 First Data is fetched from S3 bucket to staging tables.
 ![Staging Taables](https://github.com/vikaskumar23/Udacity-DEND-Project-Data-Warehouse-on-Redshift/blob/master/staging_tables.PNG)
+
 Then after some transformations data is loaded into star Schema. Some transformations include:
 - Date data is divided in chunks to create date dimension.
 - Data from songs table and events table is joined to create songplays fact table.
